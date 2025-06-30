@@ -1,0 +1,3 @@
+tup=("c","d","a","a","b","b","a")
+k=tup.count("a")
+print("no of students obtained a is:" ,k)
