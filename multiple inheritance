@@ -1,0 +1,18 @@
+class student1:
+    def __init__(self):
+        self.name = input("Enter your name: ")
+        self.college = input("Enter college name: ")
+
+class student2:
+    def __init__(self):
+        self.department = input("Enter your department: ")
+        self.mis = int(input("Enter your MIS number: "))
+
+class union(student1, student2):
+    def __init__(self):
+        student1.__init__(self)  # Explicitly call student1's constructor
+        student2.__init__(self)  # Explicitly call student2's constructor
+        self.domain = input("Enter your field domain: ")
+
+s1 = union()
+print(s1.name, s1.college, s1.department, s1.mis, s1.domain)
